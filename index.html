@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="index, follow" name="robots" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MethStreams Official – Watch Live NBA, MLB, NHL & More</title>
+    <meta
+      name="description"
+      content="Stream live NBA, NFL, MLB, NHL, MMA, and more on Official MethStreams. Enjoy high-quality, free sports streaming on a secure platform, anytime."
+    />
+    <meta
+      name="keywords"
+      content="MethStreams, MethStreams nba, MethStreams mlb, MethStreams nhl, MethStreams nfl, MethStreams mma, MethStreams live, MethStreams hd, MethStreams official"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      .article h1 {
+        @apply text-4xl font-extrabold text-white mb-4 leading-tight;
+      }
+
+      .article h2 {
+        @apply text-3xl font-bold text-white mb-3 leading-snug;
+      }
+
+      .article h3 {
+        @apply text-2xl font-semibold text-white mb-2;
+      }
+
+      .article h4 {
+        @apply text-xl font-medium text-white mb-2;
+      }
+
+      .article h5 {
+        @apply text-lg font-medium text-white mb-2;
+      }
+
+      .article p {
+        @apply text-base text-white/90 leading-relaxed mb-4;
+      }
+
+      .article ul {
+        @apply list-disc pl-6 text-white/90 mb-4 space-y-1;
+      }
+
+      .article ol {
+        @apply list-decimal pl-6 text-white/90 mb-4 space-y-1;
+      }
+
+      .article li {
+        @apply leading-relaxed text-white/90;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-950">
+    <header class="sticky top-0 z-50">
+      <nav
+        class="border-b border-white/15 bg-neutral-950/95 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/30"
+      >
+        <div class="container mx-auto px-4">
+          <div class="flex justify-center gap-6 py-4">
+            <a
+              class="text-2xl font-bold text-white/90 transition-colors shrink-0"
+              href="/"
+              >MethStreams</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-1">
+      <div class="container mx-auto px-4 py-5 pb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="col-span-12"></div>
+          <div class="col-span-9">
+            <div class="flex items-center justify-between mb-6">
+              <h2 class="text-2xl font-bold text-white/95">
+                Total Sports: <span id="totalSportsCount"></span>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="col-span-1 lg:col-span-9">
+            <div class="space-y-8">
+              <div class="flex flex-col gap-3 lg:gap-4">
+                <div class="block">
+                  <div
+                    class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm card relative p-3 lg:p-5 flex items-center justify-between transition-all duration-300 cursor-pointer group overflow-hidden hover:scale-[1.02] text-white"
+                  >
+                    <div class="absolute inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-[400px] h-[400px] bg-black/20 dark:bg-white/30 rounded-full blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                    <div class="relative flex items-center gap-3 lg:gap-6">
+                      <div
+                        class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lg:w-6 lg:h-6"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path
+                            d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"
+                          ></path>
+                          <path d="M16 3v4"></path>
+                          <path d="M8 3v4"></path>
+                          <path d="M4 11h16"></path>
+                          <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3
+                          class="text-sm sm:text-base lg:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                        >
+                          UFC Schedule
+                        </h3>
+                        <p
+                          class="text-[10px] sm:text-xs lg:text-sm text-white/90 mt-0.5 lg:mt-1 group-hover:text-primary/80 transition-colors duration-300"
+                        >
+                          Click to view live streams
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div
+                        class="text-nowrap relative px-4 sm:px-5 py-1.5 sm:py-2 bg-white text-black rounded-full transition-all duration-300 group-hover:scale-105 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30"
+                      >
+                        <span>Watch Now</span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="group-hover:translate-x-1 transition-transform duration-300"
+                        >
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block">
+                  <div
+                    class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm card relative p-3 lg:p-5 flex items-center justify-between transition-all duration-300 cursor-pointer group overflow-hidden hover:scale-[1.02] text-white"
+                  >
+                    <div class="absolute inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-[400px] h-[400px] bg-black/20 dark:bg-white/30 rounded-full blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                    <div class="relative flex items-center gap-3 lg:gap-6">
+                      <div
+                        class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lg:w-6 lg:h-6"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path
+                            d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"
+                          ></path>
+                          <path d="M16 3v4"></path>
+                          <path d="M8 3v4"></path>
+                          <path d="M4 11h16"></path>
+                          <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3
+                          class="text-sm sm:text-base lg:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                        >
+                          BOXING Schedule
+                        </h3>
+                        <p
+                          class="text-[10px] sm:text-xs lg:text-sm text-white/90 mt-0.5 lg:mt-1 group-hover:text-primary/80 transition-colors duration-300"
+                        >
+                          Click to view live streams
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div
+                        class="text-nowrap relative px-4 sm:px-5 py-1.5 sm:py-2 bg-white text-black rounded-full transition-all duration-300 group-hover:scale-105 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30"
+                      >
+                        <span>Watch Now</span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="group-hover:translate-x-1 transition-transform duration-300"
+                        >
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block">
+                  <div
+                    class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm card relative p-3 lg:p-5 flex items-center justify-between transition-all duration-300 cursor-pointer group overflow-hidden hover:scale-[1.02] text-white"
+                  >
+                    <div class="absolute inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-[400px] h-[400px] bg-black/20 dark:bg-white/30 rounded-full blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                    <div class="relative flex items-center gap-3 lg:gap-6">
+                      <div
+                        class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lg:w-6 lg:h-6"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path
+                            d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"
+                          ></path>
+                          <path d="M16 3v4"></path>
+                          <path d="M8 3v4"></path>
+                          <path d="M4 11h16"></path>
+                          <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3
+                          class="text-sm sm:text-base lg:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                        >
+                          SOCCER Schedule
+                        </h3>
+                        <p
+                          class="text-[10px] sm:text-xs lg:text-sm text-white/90 mt-0.5 lg:mt-1 group-hover:text-primary/80 transition-colors duration-300"
+                        >
+                          Click to view live streams
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div
+                        class="text-nowrap relative px-4 sm:px-5 py-1.5 sm:py-2 bg-white text-black rounded-full transition-all duration-300 group-hover:scale-105 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30"
+                      >
+                        <span>Watch Now</span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="group-hover:translate-x-1 transition-transform duration-300"
+                        >
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block">
+                  <div
+                    class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm card relative p-3 lg:p-5 flex items-center justify-between transition-all duration-300 cursor-pointer group overflow-hidden hover:scale-[1.02] text-white"
+                  >
+                    <div class="absolute inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-[400px] h-[400px] bg-black/20 dark:bg-white/30 rounded-full blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                    <div class="relative flex items-center gap-3 lg:gap-6">
+                      <div
+                        class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lg:w-6 lg:h-6"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path
+                            d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"
+                          ></path>
+                          <path d="M16 3v4"></path>
+                          <path d="M8 3v4"></path>
+                          <path d="M4 11h16"></path>
+                          <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3
+                          class="text-sm sm:text-base lg:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                        >
+                          MLB Schedule
+                        </h3>
+                        <p
+                          class="text-[10px] sm:text-xs lg:text-sm text-white/90 mt-0.5 lg:mt-1 group-hover:text-primary/80 transition-colors duration-300"
+                        >
+                          Click to view live streams
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div
+                        class="text-nowrap relative px-4 sm:px-5 py-1.5 sm:py-2 bg-white text-black rounded-full transition-all duration-300 group-hover:scale-105 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30"
+                      >
+                        <span>Watch Now</span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="group-hover:translate-x-1 transition-transform duration-300"
+                        >
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block">
+                  <div
+                    class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm card relative p-3 lg:p-5 flex items-center justify-between transition-all duration-300 cursor-pointer group overflow-hidden hover:scale-[1.02] text-white"
+                  >
+                    <div class="absolute inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-[400px] h-[400px] bg-black/20 dark:bg-white/30 rounded-full blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                    <div class="relative flex items-center gap-3 lg:gap-6">
+                      <div
+                        class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lg:w-6 lg:h-6"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path
+                            d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"
+                          ></path>
+                          <path d="M16 3v4"></path>
+                          <path d="M8 3v4"></path>
+                          <path d="M4 11h16"></path>
+                          <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3
+                          class="text-sm sm:text-base lg:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                        >
+                          NBA Schedule
+                        </h3>
+                        <p
+                          class="text-[10px] sm:text-xs lg:text-sm text-white/90 mt-0.5 lg:mt-1 group-hover:text-primary/80 transition-colors duration-300"
+                        >
+                          Click to view live streams
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div
+                        class="text-nowrap relative px-4 sm:px-5 py-1.5 sm:py-2 bg-white text-black rounded-full transition-all duration-300 group-hover:scale-105 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30"
+                      >
+                        <span>Watch Now</span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="group-hover:translate-x-1 transition-transform duration-300"
+                        >
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block">
+                  <div
+                    class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm card relative p-3 lg:p-5 flex items-center justify-between transition-all duration-300 cursor-pointer group overflow-hidden hover:scale-[1.02] text-white"
+                  >
+                    <div class="absolute inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-[400px] h-[400px] bg-black/20 dark:bg-white/30 rounded-full blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                    <div class="relative flex items-center gap-3 lg:gap-6">
+                      <div
+                        class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lg:w-6 lg:h-6"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path
+                            d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"
+                          ></path>
+                          <path d="M16 3v4"></path>
+                          <path d="M8 3v4"></path>
+                          <path d="M4 11h16"></path>
+                          <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3
+                          class="text-sm sm:text-base lg:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                        >
+                          NHL Schedule
+                        </h3>
+                        <p
+                          class="text-[10px] sm:text-xs lg:text-sm text-white/90 mt-0.5 lg:mt-1 group-hover:text-primary/80 transition-colors duration-300"
+                        >
+                          Click to view live streams
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div
+                        class="text-nowrap relative px-4 sm:px-5 py-1.5 sm:py-2 bg-white text-black rounded-full transition-all duration-300 group-hover:scale-105 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30"
+                      >
+                        <span>Watch Now</span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="group-hover:translate-x-1 transition-transform duration-300"
+                        >
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="block">
+                  <div
+                    class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm card relative p-3 lg:p-5 flex items-center justify-between transition-all duration-300 cursor-pointer group overflow-hidden hover:scale-[1.02] text-white"
+                  >
+                    <div class="absolute inset-0 pointer-events-none">
+                      <div
+                        class="absolute w-[400px] h-[400px] bg-black/20 dark:bg-white/30 rounded-full blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      ></div>
+                    </div>
+                    <div class="relative flex items-center gap-3 lg:gap-6">
+                      <div
+                        class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lg:w-6 lg:h-6"
+                        >
+                          <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          ></path>
+                          <path
+                            d="M13.5 21h-7.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v5"
+                          ></path>
+                          <path d="M16 3v4"></path>
+                          <path d="M8 3v4"></path>
+                          <path d="M4 11h16"></path>
+                          <path d="M19 16l-2 3h4l-2 3"></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <h3
+                          class="text-sm sm:text-base lg:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300"
+                        >
+                          NFL Schedule
+                        </h3>
+                        <p
+                          class="text-[10px] sm:text-xs lg:text-sm text-white/90 mt-0.5 lg:mt-1 group-hover:text-primary/80 transition-colors duration-300"
+                        >
+                          Click to view live streams
+                        </p>
+                      </div>
+                    </div>
+                    <div class="relative">
+                      <div
+                        class="text-nowrap relative px-4 sm:px-5 py-1.5 sm:py-2 bg-white text-black rounded-full transition-all duration-300 group-hover:scale-105 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-medium shadow-lg shadow-primary/20 hover:shadow-primary/30"
+                      >
+                        <span>Watch Now</span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="group-hover:translate-x-1 transition-transform duration-300"
+                        >
+                          <path d="M5 12h14"></path>
+                          <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <article
+              class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] shadow-sm p-4 lg:p-6 mt-5"
+            >
+              <div class="space-y-4 article">
+<h1>Watch Free Live Sports on Methstreams – Your Ultimate Sports Streaming Hub</h1>
+
+<div class="space-y-4 text-base text-muted-foreground">
+
+  <p>
+    Welcome to <strong>Methstreams</strong> – your trusted destination for free live sports streaming. Whether you're a die-hard NFL fan, an NBA enthusiast, a UFC fight night addict, or just love catching every live event from across the globe, Methstreams offers uninterrupted, high-definition streaming with no signup, no subscription, and no hassle.
+  </p>
+
+  <p>
+    Methstreams is built for sports lovers who want quick, easy access to the latest games and events without paying for expensive cable or subscription services. With coverage that spans football, basketball, mixed martial arts, boxing, baseball, hockey, motorsports, tennis, soccer, wrestling, and more — Methstreams is your all-in-one sports hub for watching the action live and in HD.
+  </p>
+
+  <h2>What Can You Stream on Methstreams?</h2>
+
+  <p>
+    Methstreams features a wide range of live sports streams, including major leagues and international events. Here's what you can expect:
+  </p>
+
+  <ul class="list-disc pl-5">
+    <li><strong>NFL (National Football League):</strong> Watch every touchdown, interception, and big play live. From preseason to Super Bowl, Methstreams covers all NFL games, including Monday Night Football and Thursday Night Football.</li>
+    <li><strong>NBA (National Basketball Association):</strong> Enjoy regular-season games, Playoffs, and the NBA Finals in real-time with no lag or buffering. Follow your favorite teams and players all season long.</li>
+    <li><strong>UFC & MMA:</strong> Stream live UFC Fight Nights, PPVs, and events from Bellator, ONE Championship, and other major MMA organizations. Never miss another knockout or submission again.</li>
+    <li><strong>Boxing:</strong> Catch live streams of major boxing bouts, title fights, and undercard matches. Whether it's heavyweight clashes or rising stars, Methstreams delivers boxing action globally.</li>
+    <li><strong>MLB (Major League Baseball):</strong> From spring training to the World Series, Methstreams brings you every inning, every game, in full HD.</li>
+    <li><strong>NHL (National Hockey League):</strong> Watch the puck drop with live NHL games all season, including the Playoffs and Stanley Cup Final.</li>
+    <li><strong>Soccer:</strong> Access streams for UEFA Champions League, English Premier League, La Liga, Serie A, Bundesliga, Ligue 1, MLS, and international tournaments like the FIFA World Cup and Copa America.</li>
+    <li><strong>Motorsports:</strong> Stream Formula 1 Grand Prix weekends, NASCAR Cup Series, MotoGP, and more — from qualifying to race day.</li>
+    <li><strong>Tennis:</strong> Watch Grand Slam tournaments like Wimbledon, US Open, French Open, and Australian Open live with real-time scoring.</li>
+    <li><strong>Golf:</strong> Follow the Masters, PGA Tour, Ryder Cup, and other golf events as they happen.</li>
+    <li><strong>Wrestling:</strong> Enjoy live WWE and AEW streams for events like WrestleMania, Raw, SmackDown, Dynamite, and pay-per-view specials.</li>
+  </ul>
+
+  <h2>Why Choose Methstreams Over Other Streaming Sites?</h2>
+
+  <p>
+    Methstreams stands out from the crowd with a user-focused design and an unbeatable variety of live events. Unlike many other sports streaming websites that bombard you with ads or require registration, Methstreams is completely free, ad-light, and accessible to everyone.
+  </p>
+
+  <ul class="list-disc pl-5">
+    <li><strong>Zero Sign-Up Required:</strong> No account needed. Just visit the site and click the stream.</li>
+    <li><strong>HD Quality Streams:</strong> All streams are in high-definition, ensuring crisp visuals and smooth playback.</li>
+    <li><strong>Multiple Mirror Links:</strong> If one stream fails, several alternative links are available for backup.</li>
+    <li><strong>Lightweight & Mobile-Friendly:</strong> The site works well on smartphones, tablets, desktops, and smart TVs.</li>
+    <li><strong>Real-Time Updates:</strong> Stream links are updated before events go live so you're always on time.</li>
+    <li><strong>No Hidden Fees or Ads:</strong> Minimal interruptions, especially if you're using an ad blocker or VPN.</li>
+  </ul>
+
+  <h2>How to Use Methstreams – Step-by-Step</h2>
+
+  <p>Streaming sports on Methstreams is quick and easy. Here's how to do it:</p>
+
+  <ol class="list-decimal pl-5">
+    <li>Open your browser and go to the Methstreams website.</li>
+    <li>Choose your sport category – NFL, NBA, UFC, Boxing, Soccer, etc.</li>
+    <li>Click on the event you want to watch (live or upcoming).</li>
+    <li>Select a working stream link and hit play.</li>
+    <li>Enjoy the live sports experience in HD with no interruptions.</li>
+  </ol>
+
+  <h2>Frequently Asked Questions (FAQ)</h2>
+
+  <h3>Is Methstreams legal?</h3>
+  <p>
+    Methstreams provides links to publicly available streams on the internet. Users are advised to check the legality of streaming sports in their region and always use a VPN for protection and privacy.
+  </p>
+
+  <h3>Do I need to download anything to use Methstreams?</h3>
+  <p>
+    No. Methstreams is entirely web-based and requires no downloads or installations. Just open your browser and start watching.
+  </p>
+
+  <h3>What if my stream is not working?</h3>
+  <p>
+    Try refreshing the page or selecting an alternative stream link. Most events have multiple backup links in case one goes down.
+  </p>
+
+  <h3>Can I use Methstreams on my phone?</h3>
+  <p>
+    Yes! Methstreams is fully responsive and works on Android and iOS devices. You can also use it on tablets, PCs, laptops, and smart TVs.
+  </p>
+
+  <h3>Is a VPN recommended?</h3>
+  <p>
+    For maximum privacy and access to all content worldwide, it’s highly recommended to use a VPN service when accessing Methstreams.
+  </p>
+
+  <h2>Alternative Free Sports Streaming Sites</h2>
+
+  <p>
+    While Methstreams is one of the best platforms for free live sports, here are some alternatives in case the site is down or under maintenance:
+  </p>
+
+  <ul class="list-disc pl-5">
+    <li><strong>Sportsurge:</strong> A reliable alternative with fast live sports access, especially popular for NBA and UFC events.</li>
+    <li><strong>StreamEast:</strong> Known for its clean UI and HD streams. Great for football, baseball, and basketball.</li>
+    <li><strong>BuffStreams:</strong> Widely used for boxing, wrestling, and college sports.</li>
+    <li><strong>VIPRow:</strong> Offers a large variety of sports including rugby, volleyball, cricket, and darts.</li>
+    <li><strong>CrackStreams:</strong> Especially useful for boxing and UFC fans, frequently updated and easy to use.</li>
+  </ul>
+
+  <h2>Final Thoughts – Why Methstreams Is the Go-To Choice</h2>
+
+  <p>
+    In a world where sports subscriptions are expensive and often limited to specific regions, Methstreams offers a breath of fresh air. With its massive coverage of sports categories, user-friendly design, and no-barrier access, Methstreams has earned its place as a top choice for millions of sports fans.
+  </p>
+
+  <p>
+    Whether it’s Sunday night football, the NBA Finals, UFC 300, or a surprise boxing showdown — Methstreams makes sure you can watch it all without delay. Bookmark the site, share it with fellow fans, and never miss a match again.
+  </p>
+
+  <p>
+    <strong>Join thousands of daily users who rely on Methstreams for their sports entertainment. It’s live, it’s HD, and it’s 100% free.</strong>
+  </p>
+
+</div>
+
+              </div>
+            </article>
+          </div>
+
+          <aside class="col-span-1 lg:col-span-3">
+            <div class="sticky top-20">
+              <div class="space-y-4">
+                <div
+                  class="rounded-lg border border-white/10 bg-[oklch(.205_0_0)] text-card-foreground shadow-sm p-4 lg:p-6"
+                >
+                  <div class="space-y-3 lg:space-y-4">
+                    <div>
+                      <h1
+                        class="font-semibold text-sm lg:text-base mb-2 lg:mb-3 text-white"
+                      >
+                        MethStreams: Your Premier Sports Streaming Hub
+                      </h1>
+                      <div class="space-y-2 lg:space-y-3">
+                        <p class="text-xs lg:text-sm text-white/90">
+                          Experience seamless live sports streaming like never
+                          before. MethStreams offers high-quality, real-time
+                          broadcasts of your favorite sports, covering major
+                          leagues and global events.
+                        </p>
+                        <p class="text-xs lg:text-sm text-white/90">
+                          Say goodbye to expensive cable subscriptions. With
+                          multiple HD streaming links available, you can enjoy
+                          every match with minimal buffering and maximum
+                          convenience.
+                        </p>
+                        <p class="text-xs lg:text-sm text-white/90">
+                          Stay updated with live scores, instant game
+                          notifications, and an interactive chat feature where
+                          you can engage with fellow fans in real-time. Your
+                          ultimate sports-watching experience starts here!
+                        </p>
+                      </div>
+                      <div
+                        class="flex items-center gap-2 mt-3 lg:mt-4 text-[10px] lg:text-xs text-white/90"
+                      >
+                        <span>160 words</span><span>•</span
+                        ><span>Streaming Guide</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t border-white/10 bg-[oklch(.205_0_0)]">
+      <div class="container mx-auto px-4 py-6">
+        <div class="flex flex-col items-center gap-4">
+          <!-- Disclaimer -->
+          <p
+            class="text-[11px] text-white/90 text-center max-w-md leading-snug"
+          >
+            Disclaimer: MethStreams does not host any content. All sports events
+            and streams are provided by third-party sources. We are not
+            responsible for the accuracy, compliance, copyright, legality, or
+            decency of any content streamed through this platform.
+          </p>
+
+          <!-- Copyright -->
+          <p class="text-xs text-white/90 text-center">
+            © 2025 MethStreams. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const count = document.querySelectorAll(".block").length;
+      document.querySelector("#totalSportsCount").textContent = count;
+
+      document.querySelectorAll(".block").forEach((element) => {
+        element.addEventListener("click", () => {
+          window.location.href = "https://methstreams.wiki/";
+        });
+      });
+    </script>
+  </body>
+</html>
